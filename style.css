@@ -155,6 +155,9 @@ nav ul a {
     justify-content: flex-end;
     flex: 1 0 auto;
 }
+.social-menu ul li{
+    padding: 5px 10px;
+}
 
 .social-menu ul li a:before {
     font-family: "Font Awesome 5 Brands";
@@ -175,9 +178,27 @@ nav ul a {
 .social-menu ul li a[href*='pinterest.com']::before {
     content: '\f231';
 }
- .navegacion-social-dropdown {
+ .navegation-social-dropdown {
     background-color: #3F51B5;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
  }
+ @media (min-width:768px) {
+    .navegation-social-dropdown .dropdown ul li{
+       flex: 1 0 auto;
+    }
+    .navegation-social-dropdown .dropdown {
+       flex: 1 0 auto;
+    }
+    .navegation-social-dropdown .social-menu{
+   
+       order: unset;
+       flex: 1 0 auto;
+    }
+   .navegation-social-dropdown .social-menu ul {
+       justify-content: flex-end;
+   }
+
+}
